@@ -6,4 +6,4 @@ This is a collaborated project by Softtech Foundation. The members of this proje
 2. Manish Parajuli
 3. Sohil Byanjankar
 
-nirajgiriXD
+XD
