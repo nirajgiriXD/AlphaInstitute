@@ -5039,6 +5039,7 @@ fieldset:disabled .btn {
     padding-right: 1rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 50px;
 }
 
 .navbar>.container,
@@ -18575,6 +18576,121 @@ label {
 |   User Styles
 -----------------------------------------------*/
 
+section {
+    margin: 13px auto 0 auto;
+}
+
+
+/* sliders container */
+
+.text-cntr {
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+/* ---------- CAROUSEL ---------- */
+
+.carousel-cntr {
+    width: auto;
+    height: 300px;
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+#carousel {
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+
+/* ----- Carousel slides ----- */
+
+#carousel ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+
+#carousel ul li {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    float: left;
+    background-color: #cacaca;
+    align-items: center;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ----- Next/Prev buttons ----- */
+
+a.prev-btn {
+    left: 0;
+    margin: 0 0 0 .25em;
+}
+
+a.next-btn {
+    right: 0;
+    margin: 0 .25em 0 0;
+}
+
+a.carousel-btns {
+    width: 20px;
+    height: 20px;
+    padding: .4em;
+    position: absolute;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: rgba(40, 40, 40, .8);
+    border-radius: 50%;
+    filter: contrast(110%);
+}
+
+a.carousel-btns>svg {
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    transform: translate(0% -50%);
+    margin: auto;
+    position: relative;
+    fill: rgba(255, 255, 255, .85);
+}
+
+a.carousel-btns:hover {
+    background-color: rgba(40, 40, 40, 1);
+    transition: .2s ease-out;
+}
+
+a.carousel-btns:hover svg {
+    fill: rgba(255, 255, 255, 1);
+}
+
 
 /*# sourceMappingURL=theme.css.map */
 
@@ -18618,4 +18734,359 @@ label {
 #subUs:active,
 #subUs:hover {
     border: 2px solid var(--bs-red) !important;
+}
+
+
+/* -------------------------------------------------------------
+# Contact
+---------------------------------------------------------------*/
+
+.contact-page-section {
+    margin: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+
+/* -----------------------------------------------------------
+# Services 
+--------------------------------------------------------------*/
+
+
+/* Card Animation */
+
+.single-service {
+    background: #fff;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 13px;
+}
+
+.single-service:hover:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * 3px);
+    left: calc(-1 * 3px);
+    height: calc(100% + 3px * 2);
+    width: calc(100% + 3px * 2);
+    /* background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); */
+    /* background-image: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #F4F5FF, #5073b8, #1098ad, #07b39b, #6fba82); */
+    background-image: linear-gradient(60deg, var(--bs-blue), var(--bs-red));
+    border-radius: 3px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Animation ends here */
+
+.section-services {
+    padding-top: 144px;
+    padding-bottom: 144px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.section-services .header-section .title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-services .header-section .title:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 1px;
+    background-color: #f70037;
+}
+
+.section-services .header-section .title:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 3px;
+    background-color: #f70037;
+}
+
+.section-services .header-section .title span {
+    color: var(--bs-red);
+}
+
+.section-services .header-section .description {
+    color: #6f6f71;
+}
+
+.section-services .single-service {
+    margin-top: 34px;
+    /* background-color: #24252a; */
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1); */
+}
+
+.section-services .single-service .part-1 {
+    padding: 40px 40px 25px;
+    border-bottom: 2px solid #1d1e23;
+}
+
+.section-services .single-service .part-1 i {
+    margin-bottom: 25px;
+    font-size: 50px;
+    color: #f70037;
+}
+
+.section-services .single-service .part-1 .title {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 {
+    padding: 30px 40px 40px;
+}
+
+.section-services .single-service .part-2 .description {
+    margin-bottom: 22px;
+    color: #6f6f71;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 a {
+    color: #6f6f71;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.section-services .single-service .part-2 a i {
+    margin-right: 10px;
+    color: #f70037;
+}
+
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+
+.tz-gallery .row {
+    margin: 8px auto 8px auto;
+    padding: 13px 0 0 0;
+}
+
+.galler-container {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.imgSizeManage {
+    margin: 21px;
+    min-height: 189px;
+    max-height: 189px;
+}
+
+.imgSizeManage:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img-box {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* -----------------------------------------------------------------
+#About Us 
+-------------------------------------------------------------------*/
+
+.abt-us-title {
+    color: #555555;
+}
+
+
+/*------------------------------------------------------------------
+#Footer 
+------------------------------------------------------------------*/
+
+.footer-con {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer-con {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-footer h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1rem;
+}
+
+.mt-4 {
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+.bg-footer {
+    background-color: #33383c;
+    font-family: "Raleway", sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-link li a:hover {
+    text-decoration: none;
+}
+
+.footer-heading {
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-link a {
+    color: #acacac;
+    line-height: 40px;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+.footer-link a:hover {
+    color: #fff;
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.contact-info {
+    color: #acacac;
+    font-size: 16px;
+}
+
+.footer-social-icon {
+    font-size: 15px;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.facebook {
+    transition: transform 1s ease 0s;
+    background-color: #4e71a8;
+    color: #ffffff;
+}
+
+.twitter {
+    transition: transform 1s ease 0s;
+    background-color: #55acee;
+    color: #ffffff;
+}
+
+.instagram {
+    transition: transform 1s ease 0s;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: #ffffff;
+}
+
+
+/* HOVER */
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+    transform: rotate(360deg);
+}
+
+.footer-alt {
+    color: #acacac;
+}
+
+.footer-heading {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-heading:after {
+    content: "";
+    width: 25px;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    border-bottom: 3px solid #f53838;
+}
+
+@media (min-width: 768px) {
+    .footer-con {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer-con {
+        max-width: 540px;
+        width: 100%;
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-con {
+        max-width: 960px;
+    }
 }
