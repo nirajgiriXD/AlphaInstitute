@@ -175,47 +175,79 @@
 
         <!-- End Project Area -->
 
-
-        <!-- Section for alignment -->
-        <section></section>
-
         <!-- Footer -->
-        <footer class="bg-footer">
-            <div class="container footer-con">
-                <div>
-                    <h6 class="footer-heading text-uppercase text-white">Useful Links</h6>
-                    <ul class="footer-link mt-4">
-                        <li><a href="#!">Home</a></li>
-                        <li><a href="#!">Gallery</a></li>
-                        <li><a href="#!">Services</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h6 class="footer-heading text-uppercase text-white">Help</h6>
-                    <ul class="footer-link mt-4">
-                        <li><a href="#!">Register</a></li>
-                        <li><a href="#!">About Us</a></li>
-                        <li><a href="#!">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-link">
-                    <h6 class="footer-heading text-uppercase text-white">Contact us</h6>
-                    <p class="contact-info mt-4">Need help ?</p>
-                    <p class="contact-info">+977 9823029291</p>
-                    <div>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#!"><i class="fa facebook footer-social-icon fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a href="#!"><i class="fa twitter footer-social-icon fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#!"><i class="fa instagram footer-social-icon fa-instagram"></i></a></li>
-                        </ul>
+        <footer>
+            <div class="row">
+                <div class="col-3 ftr-col-3">
+                    <div class="link-cat" onclick="footerToggle(this)">
+                        <span class="footer-toggle"></span>
+                        <span class="footer-cat">Alpha Institute</span>
                     </div>
+                    <ul class="footer-cat-links" style="width: 80%; pointer-events: none;">
+                        <li><br></li>
+                        <li>
+                            <a href="#" style="text-align: justify;">
+                            Our institute have experienced teachers to teach you Korean language.
+                        </a>
+                        </li>
+                        <!-- <li><a href=""><span>Android App Development</span></a></li>
+                    <li><a href=""><span>ios App Development</span></a></li> -->
+                        <li><br></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 ftr-col-3">
+                    <div class="link-cat" onclick="footerToggle(this)">
+                        <span class="footer-toggle"></span>
+                        <span class="footer-cat">Services</span>
+                    </div>
+                    <ul class="footer-cat-links" style="cursor: context-menu;">
+                        <li><br></li>
+                        <li><a name=""><span>Korean Language</span></a></li>
+                        <li><a name=""><span>Examination</span></a></li>
+                        <li><a name=""><span>Guidance and Counselling</span></a></li>
+                        <li><a name=""><span>Online and Offline Classes</span></a></li>
+                        <li><br></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 ftr-col-3">
+                    <div class="link-cat" onclick="footerToggle(this)">
+                        <span class="footer-toggle"></span>
+                        <span class="footer-cat">Quick Links</span>
+                    </div>
+                    <ul class="footer-cat-links">
+                        <li><br></li>
+                        <li><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="about.html"><span>About</span></a></li>
+                        <li><a href="gallery.html"><span>Gallery</span></a></li>
+                        <li><a href="service.html"><span>Services</span></a></li>
+                        <li><br></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 ftr-col-3">
+                    <div class="link-cat" onclick="footerToggle(this)">
+                        <span class="footer-toggle"></span>
+                        <span class="footer-cat">Contact Us</span>
+                    </div>
+                    <ul class="footer-cat-links">
+                        <li><br></li>
+                        <li><i class="fa fa-phone"></i><a name="">9823029291</a></li>
+                        <li><i class="fa fa-facebook"></i><a href="https://www.facebook.com/epsnepal4" target="_blank">epsnepal4</a></li>
+                        <li><i class="fa fa-map-marker"></i><a name="">Suryabinayak, Bhaktapur</a></li>
+                        <li><br></li>
+                    </ul>
                 </div>
             </div>
-            <div class="text-center mt-5">
-                <p class="footer-alt text-white">2022 © Alpha Institute | All Rights Reserved</p>
+            <div id="copyright">
+                Copyright &copy; Alpha Institute
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
             </div>
         </footer>
-
+        <!-- End Footer -->
 
     </main>
     <!-- ===============================================-->

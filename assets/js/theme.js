@@ -355,6 +355,12 @@ $('.count').each(function() {
     });
 });
 
+// Footer
+function footerToggle(footerBtn) {
+    $(footerBtn).toggleClass("btnActive");
+    $(footerBtn).next().toggleClass("active");
+}
+
 
 // /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
