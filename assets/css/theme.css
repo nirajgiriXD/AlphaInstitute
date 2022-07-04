@@ -19160,3 +19160,24 @@ footer ul li {
     width: 89%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
+
+@media (max-width:610px) {
+    .icon-aniNum {
+        display: none;
+    }
+    .text-aniNum {
+        margin-left: 34px;
+    }
+}
+
+@media (max-width:450px) {
+    .text-aniNum {
+        margin-left: 21px;
+    }
+}
+
+@media (max-width:350px) {
+    .text-aniNum {
+        margin-left: 8px;
+    }
+}
