@@ -19150,4 +19150,13 @@ footer ul li {
 }
 
 
-/*  */
+/* Animated Number COunter */
+
+.aniNum {
+    background-color: #fff;
+    border-radius: 13px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    width: 89%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
