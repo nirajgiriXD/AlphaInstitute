@@ -3,6 +3,6 @@
 This is the official site of Alpha Institute.
 
 
-Author: Niraj Giri
+Created by Niraj Giri
 
 XD
