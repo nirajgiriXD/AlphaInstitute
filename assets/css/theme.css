@@ -5467,6 +5467,7 @@ fieldset:disabled .btn {
     background-clip: border-box;
     border: 2px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.625rem;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 .card>hr {
@@ -18729,6 +18730,7 @@ a.carousel-btns:hover svg {
 /* Card Animation */
 
 .single-service {
+    height: 350px;
     background: #fff;
     position: relative;
     border-radius: 3px;
@@ -18845,17 +18847,7 @@ a.carousel-btns:hover svg {
     color: #6f6f71;
     font-size: 14px;
     line-height: 1.8em;
-}
-
-.section-services .single-service .part-2 a {
-    color: #6f6f71;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.section-services .single-service .part-2 a i {
-    margin-right: 10px;
-    color: #f70037;
+    text-align: justify;
 }
 
 
