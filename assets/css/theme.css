@@ -19420,3 +19420,20 @@ footer ul li {
     font-weight: 300;
     margin: 2em 0;
 }
+
+
+/* Animated Number Counter */
+
+@media (max-width:500px) {
+    .aniNumCon {
+        border: none !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+    .aniNumCon p {
+        font-size: 12px;
+    }
+    .aniNumCon .fa {
+        font-size: 17px !important;
+    }
+}
