@@ -18892,6 +18892,10 @@ a.carousel-btns:hover svg {
     }
 }
 
+.abt-us-img {
+    max-width: ;
+}
+
 
 /*------------------------------------------------------------------
 #Footer 
@@ -19219,19 +19223,19 @@ footer ul li {
 }
 
 .card-box:nth-child(1):before {
-    background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url('../img/slider/img-1.jpg');
 }
 
 .card-box:nth-child(2):before {
-    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url('../img/slider/img-2.jpg');
 }
 
 .card-box:nth-child(3):before {
-    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url('../img/slider/img-3.jpg');
 }
 
 .card-box:nth-child(4):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url('../img/slider/img-4.jpg');
 }
 
 .card-box-content {
