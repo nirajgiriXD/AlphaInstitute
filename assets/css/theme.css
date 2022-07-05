@@ -19012,7 +19012,7 @@ footer ul li {
 }
 
 #copyright {
-    text-align: center;
+    text-align: center !important;
     color: #fff;
     font-family: lato;
 }
@@ -19322,6 +19322,10 @@ footer ul li {
 
 .accordion-title {
     font-size: 16px;
+}
+
+.accordion-title::after {
+    margin-right: 21px !important;
 }
 
 .accordion button {
